@@ -24,3 +24,18 @@ void input() {  // prosedur untuk input
 		cin >> a[i];                             // input dari pengguna
 	}
 }
+
+void bublesortarray() {
+	int pass = 1;
+	do {
+		for (int j = 0; j <= n - 1 - pass; j++) {
+			if (a[j] > a[j + 1]) {
+				int temp;
+				temp = a[j];
+				a[j] = a[j + 1];
+				a[j+1]= temp;
+			}
+		}
+		pass = pass + 1;
+	} while (pass <= n - 1);
+}

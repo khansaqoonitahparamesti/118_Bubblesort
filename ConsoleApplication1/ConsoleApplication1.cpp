@@ -51,3 +51,12 @@ void display() {
 	cout << "jumalah pass =" << n - 1 << endl;
 	cout << endl;
 }
+
+void main() {
+	input();
+	bublesortarray();
+	display();
+	system("pause");
+
+	return 0; 
+}
